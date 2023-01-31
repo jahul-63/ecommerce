@@ -42,10 +42,10 @@ const routes: Routes = [
   {path:'faq',component:FaqComponent},
   {path:'aboutus',component:AboutusComponent},
   {path:'contact',component:ContactComponent},
-  {path:'**',component:Page404Component},
   {path:'blogleftsidebar', component:BlogleftsidebarComponent},
   {path:'blogdetails',component:BlogdetailsComponent},
   {path:'blogmasonry',component:BlogmasonryComponent},
+  {path:'**',component:Page404Component}
 ];
 
 @NgModule({
