@@ -13,6 +13,9 @@ import { AccountReturnComponent } from './dashboard/myaccount/account-return/acc
 import { AccountTrackComponent } from './dashboard/myaccount/account-track/account-track.component';
 import { AccountComponent } from './dashboard/myaccount/account/account.component';
 import { FaqComponent } from './faq/faq.component';
+import { BlogdetailsComponent } from './blog/blogdetails/blogdetails.component';
+import { BlogleftsidebarComponent } from './blog/blogleftsidebar/blogleftsidebar.component';
+import { BlogmasonryComponent } from './blog/blogmasonry/blogmasonry.component';
 import { HomeComponent } from './home/home.component';
 import { Page404Component } from './page404/page404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
@@ -39,7 +42,10 @@ const routes: Routes = [
   {path:'faq',component:FaqComponent},
   {path:'aboutus',component:AboutusComponent},
   {path:'contact',component:ContactComponent},
-  {path:'**',component:Page404Component}
+  {path:'**',component:Page404Component},
+  {path:'blogleftsidebar', component:BlogleftsidebarComponent},
+  {path:'blogdetails',component:BlogdetailsComponent},
+  {path:'blogmasonry',component:BlogmasonryComponent},
 ];
 
 @NgModule({

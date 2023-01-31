@@ -25,6 +25,9 @@ import { FaqComponent } from './faq/faq.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 import { Page404Component } from './page404/page404.component';
+import { BlogleftsidebarComponent } from './blog/blogleftsidebar/blogleftsidebar.component';
+import { BlogmasonryComponent } from './blog/blogmasonry/blogmasonry.component';
+import { BlogdetailsComponent } from './blog/blogdetails/blogdetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +51,10 @@ import { Page404Component } from './page404/page404.component';
     FaqComponent,
     AboutusComponent,
     ContactComponent,
-    Page404Component
+    Page404Component,
+    BlogleftsidebarComponent,
+    BlogmasonryComponent,
+    BlogdetailsComponent
   ],
   imports: [
     BrowserModule,
