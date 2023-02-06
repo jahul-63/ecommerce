@@ -9,7 +9,7 @@
 
                 <!--====== Main Logo ======-->
 
-                <a class="main-logo" routerLink="/sew">
+                <a class="main-logo" routerLink="/">
 
                     <img src="assets/images/logo/logo-1.png" alt=""></a>
                 <!--====== End - Main Logo ======-->
@@ -71,7 +71,7 @@
                             </li>
                             <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Settings">
 
-                                <a><i class="fa fa-user"></i></a>
+                                <a><i class="fa fa-user-cog"></i></a>
 
                                 <!--====== Dropdown ======-->
 
@@ -163,7 +163,7 @@
                         <ul class="ah-list">
                             <li class="has-dropdown">
 
-                                <span class="mega-text">M</span>
+                                <span (click)="mega_text()" [ngClass]="isActive ? 'mega-text js-open' : 'mega-text '" class="mega-text">M</span>
 
                                 <!--====== Mega Menu ======-->
 
@@ -172,7 +172,7 @@
                                     <div class="mega-menu-wrap">
                                         <div class="mega-menu-list">
                                             <ul>
-                                                <li class="js-active">
+                                                <li>
 
                                                     <a href="shop-side-version-2.html"><i class="fa fa-tv u-s-m-r-6"></i>
 
@@ -225,7 +225,7 @@
                                         </div>
 
                                         <!--====== Electronics ======-->
-                                        <div class="mega-menu-content js-active">
+                                        <div class="mega-menu-content">
 
                                             <!--====== Mega Menu Row ======-->
                                             <div class="row">
@@ -938,7 +938,7 @@
                                                 <a routerLink="/signup">Signup / Register</a></li>
                                             <li>
 
-                                                <a href="lost-password.html">Lost Password</a></li>
+                                                <a routerLink="/forgotpassword">Lost Password</a></li>
                                         </ul>
                                         <!--====== End - Dropdown ======-->
                                     </li>
@@ -960,13 +960,13 @@
                                                 <ul style="width:180px">
                                                     <li>
 
-                                                        <a routerLink="/account">Edit Profile</a></li>
+                                                        <a routerLink="/editprofile">Edit Profile</a></li>
                                                     <li>
 
-                                                        <a routerLink="/account">Edit Address Book</a></li>
+                                                        <a routerLink="/editaddress">Edit Address Book</a></li>
                                                     <li>
 
-                                                        <a routerLink="/account">Manage Order</a></li>
+                                                        <a routerLink="/manageorder">Manage Order</a></li>
                                                 </ul>
                                                 <!--====== End - Dropdown ======-->
                                             </li>

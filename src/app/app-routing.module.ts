@@ -22,6 +22,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ShopGridComponent } from './shop-grid/shop-grid.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { LostpasswordComponent } from './dashboard/myaccount/lostpassword/lostpassword.component';
+import { EditprofileComponent } from './dashboard/myaccount/editprofile/editprofile.component';
+import { EditaddressbookComponent } from './dashboard/myaccount/editaddressbook/editaddressbook.component';
+import { ManageorderComponent } from './dashboard/myaccount/manageorder/manageorder.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -45,6 +49,10 @@ const routes: Routes = [
   {path:'blogleftsidebar', component:BlogleftsidebarComponent},
   {path:'blogdetails',component:BlogdetailsComponent},
   {path:'blogmasonry',component:BlogmasonryComponent},
+  {path:'forgotpassword',component:LostpasswordComponent},
+  {path:'editprofile',component:EditprofileComponent},
+  {path:'editaddress',component:EditaddressbookComponent},
+  {path:'manageorder',component:ManageorderComponent},
   {path:'**',component:Page404Component}
 ];
 

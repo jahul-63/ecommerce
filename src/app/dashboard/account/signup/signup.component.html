@@ -12,10 +12,10 @@
                         <ul class="breadcrumb__list">
                             <li class="has-separator">
 
-                                <a href="index.html">Home</a></li>
+                                <a routerLink="/">Home</a></li>
                             <li class="is-marked">
 
-                                <a href="signup.html">Signup</a></li>
+                                <a routerLink="/signup">Signup</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,15 +69,15 @@
                                         <label class="gl-label" for="reg-fname">FIRST NAME *</label>
 
                                         <input class="input-text input-text--primary-style" type="text" id="reg-fname" placeholder="First Name"></div>
-                                    <div class="u-s-m-b-30">
+                                    <!-- <div class="u-s-m-b-30">
 
                                         <label class="gl-label" for="reg-lname">LAST NAME *</label>
 
-                                        <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="Last Name"></div>
-                                    <div class="gl-inline">
+                                        <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="Last Name"></div> -->
+                                    <!-- <div class="gl-inline">
                                         <div class="u-s-m-b-30">
 
-                                            <!--====== Date of Birth Select-Box ======-->
+                                            ====== Date of Birth Select-Box ======
 
                                             <span class="gl-label">BIRTHDAY</span>
                                             <div class="gl-dob"><select class="select-box select-box--primary-style">
@@ -99,7 +99,7 @@
                                                     <option value="1993">1993</option>
                                                     <option value="1994">1994</option>
                                                 </select></div>
-                                            <!--====== End - Date of Birth Select-Box ======-->
+                                            ====== End - Date of Birth Select-Box ======
                                         </div>
                                         <div class="u-s-m-b-30">
 
@@ -108,7 +108,7 @@
                                                 <option value="male">Male</option>
                                                 <option value="male">Female</option>
                                             </select></div>
-                                    </div>
+                                    </div> -->
                                     <div class="u-s-m-b-30">
 
                                         <label class="gl-label" for="reg-email">E-MAIL *</label>
@@ -121,7 +121,7 @@
                                         <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Enter Password"></div>
                                     <div class="u-s-m-b-15">
 
-                                        <button class="btn btn--e-transparent-brand-b-2" type="submit">CREATE</button></div>
+                                        <button class="btn btn--e-transparent-brand-b-2" data-bs-toggle="modal" data-bs-target="#otpmodal" type="button">CREATE</button></div>
 
                                     <a class="gl-link" href="#">Return to Store</a>
                                 </form>
@@ -136,3 +136,40 @@
     <!--====== End - Section 2 ======-->
 </div>
 <!--====== End - App Content ======-->
+<div class="modal fade" id="otpmodal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-radius modal-shadow">
+
+            <button class="btn dismiss-button fas fa-times" type="button" data-bs-dismiss="modal"></button>
+            <div class="modal-body">
+                <!-- Phone Otp -->
+                <div class="container" id="phoneOTP" style="margin: 108px -2px;">
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <h2 style="color: #e22929;">Verify your phone number</h2>
+                            <p>Please enter the 5 digit code sent to XXX-XXX-XXX</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <input type="tel" name="pass1" maxlength="1" size="1" required id="pass1" style="font-weight: 600; font-size: 21px; padding: 20px 22px 21px; height: 60px;width: 60px;"> &nbsp;
+                            <input type="tel" name="pass2" maxlength="1" size="1" required id="pass2" style="font-weight: 600; font-size: 21px; padding: 20px 22px 21px; height: 60px;width: 60px;"> &nbsp;
+                            <input type="tel" name="pass3" maxlength="1" size="1" required id="pass3" style="font-weight: 600; font-size: 21px; padding: 20px 22px 21px; height: 60px;width: 60px;"> &nbsp;
+                            <input type="tel" name="pass4" maxlength="1" size="1" required id="pass4" style="font-weight: 600; font-size: 21px; padding: 20px 22px 21px; height: 60px;width: 60px;"> &nbsp;
+                            <input type="tel" name="pass5" maxlength="1" size="1" required id="pass5" style="font-weight: 600; font-size: 21px; padding: 20px 22px 21px; height: 60px;width: 60px;">
+                            <i class="fa fa-arrow-right" aria-hidden="true" style="cursor: pointer; position: relative;left: 25px;font-size: 29px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <p style=" font-size: 18px; font-weight: 700;">Didn’t recieve a code? <span style="color: #e22929;">Resend it</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

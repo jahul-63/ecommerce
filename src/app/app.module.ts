@@ -28,6 +28,10 @@ import { Page404Component } from './page404/page404.component';
 import { BlogleftsidebarComponent } from './blog/blogleftsidebar/blogleftsidebar.component';
 import { BlogmasonryComponent } from './blog/blogmasonry/blogmasonry.component';
 import { BlogdetailsComponent } from './blog/blogdetails/blogdetails.component';
+import { LostpasswordComponent } from './dashboard/myaccount/lostpassword/lostpassword.component';
+import { EditprofileComponent } from './dashboard/myaccount/editprofile/editprofile.component';
+import { EditaddressbookComponent } from './dashboard/myaccount/editaddressbook/editaddressbook.component';
+import { ManageorderComponent } from './dashboard/myaccount/manageorder/manageorder.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +58,11 @@ import { BlogdetailsComponent } from './blog/blogdetails/blogdetails.component';
     Page404Component,
     BlogleftsidebarComponent,
     BlogmasonryComponent,
-    BlogdetailsComponent
+    BlogdetailsComponent,
+    LostpasswordComponent,
+    EditprofileComponent,
+    EditaddressbookComponent,
+    ManageorderComponent
   ],
   imports: [
     BrowserModule,
